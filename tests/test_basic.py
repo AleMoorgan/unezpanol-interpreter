@@ -1,5 +1,4 @@
-from src import interpreter
-
+from interpreter import evaluar, interpretar
 def test_evaluar_entero():
     # Limpiamos variables globales antes de probar
     interpreter.variables.clear()
