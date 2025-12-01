@@ -29,9 +29,10 @@ steps:
   - name: Run mypy
     run: |
       mypy src || true
-      
-- name: Run tests with coverage
-  run: |
-    export PYTHONPATH=./src
-    pytest --cov=src --cov-report=xml
+
+  - name: Run tests with coverage
+    run: |
+      export PYTHONPATH=./src
+      pytest --cov=src --cov-report=xml
 ```
+
